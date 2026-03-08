@@ -1,0 +1,155 @@
+# ============================================================
+#   GeneticNAS - Genetic Algorithm Neural Architecture Search
+#   Bachelor Project .gitignore
+# ============================================================
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+
+# Virtual Environments
+venv/
+.venv/
+env/
+.env/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+
+# Distribution / Packaging
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+wheels/
+
+# Unit test / coverage
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# === PyTorch & Model Weights ===
+# These can be hundreds of MB to several GB
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.onnx
+*.pb
+saved_model/
+model_weights/
+pretrained/
+
+# === NAS / Genetic Algorithm Artifacts ===
+# Search history, population snapshots, evolution logs
+search_results/
+populations/
+generations/
+evolution_logs/
+nas_logs/
+architectures/searched/
+*.arch
+*.dna
+
+# Hyperparameter optimisation outputs
+hpo_results/
+optuna_studies/
+optuna.db
+ray_results/
+tuning_logs/
+
+# Benchmarking results (raw — keep processed/summary versions)
+benchmark_raw/
+timing_logs/
+profiler_output/
+
+# === CIFAR-10 Dataset ===
+# Never commit datasets — download via script instead
+data/
+datasets/
+cifar-10-batches-py/
+cifar-10-python.tar.gz
+*.tar.gz
+*.tar
+*.zip
+*.gz
+
+# === Experiment Tracking ===
+# TensorBoard
+logs/
+runs/
+tensorboard_logs/
+events.out.tfevents.*
+
+# Weights & Biases
+wandb/
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Comet ML
+.comet.config
+
+# === Jupyter Notebooks Checkpoints ===
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# === Data & Large Files ===
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.arrow
+*.db
+*.sqlite
+
+# === Environment & Secrets ===
+.env
+.env.*
+*.pem
+*.key
+secrets.yaml
+secrets.json
+config/local.py
+config/local.yaml
+
+# === IDEs ===
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# === OS ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === Misc large files ===
+*.mp4
+*.mov
+*.avi
+*.rar
+*.7z
+
+dataset/
